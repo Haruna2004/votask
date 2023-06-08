@@ -22,7 +22,7 @@ export default function Home() {
       >
         <div>
           <h3 className="text-xl font-semibold ">Active Polls</h3>
-          <p>vote a candidate</p>
+          <p>cast your vote</p>
         </div>
         <Image src={arrow_right} alt="ar" />
       </Link>
