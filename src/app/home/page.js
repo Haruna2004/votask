@@ -29,21 +29,24 @@ export default function Home() {
       {/* Edit */}
 
       <div className="flex items-center w-full mt-3 p-1 gap-3 text-center">
-        <div className="flex-[0.5] bg-[#7000FF] text-white text-xl p-2 py-3 rounded-sm">
+        <Link
+          href="/notfound"
+          className="flex-[0.5] bg-[#7000FF] text-white text-xl p-2 py-3 rounded-sm"
+        >
           <p>Create new poll</p>
-        </div>
-        <div className="flex-[0.5] border-2  p-2 text-xl">
+        </Link>
+        <Link href="/notfound" className="flex-[0.5] border-2  p-2 text-xl">
           <p>Edit an ongoing poll</p>
-        </div>
+        </Link>
       </div>
       {/* Result */}
       <div className="mt-3">
         <h2 className="text-2xl font-semibold">Poll Results</h2>
         <div className="flex flex-col gap-4 mt-2">
           {results.map((result, index) => (
-            <div className="w-full border p-4" key={index}>
+            <Link href="/result" className="w-full border p-4" key={index}>
               <h2 className="text-xl">{result}</h2>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
