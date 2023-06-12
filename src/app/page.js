@@ -15,6 +15,16 @@ export default function page() {
       >
         Continue
       </Link>
+      <div className="text-center font-semibold px-2">
+        <p>Project of Be-mint Team Golf Sponsored by </p>
+        <Link
+          className="text-blue-700"
+          target="_blank"
+          href="https://empoweringafricans.org"
+        >
+          Empowering Africans Through Education Initiative
+        </Link>
+      </div>
     </div>
   );
 }
